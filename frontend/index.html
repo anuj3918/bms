@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Payment Gateways</title>
+    <link rel="stylesheet" type="text/css" href="packages/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .navbar { border-radius:0; }
+        .navbar-head{
+          float: right;
+          padding: 0px 10px 5px;
+          font-size: 18px;
+          line-height: 20px;
+          color: #ddd;
+        }
+    </style>
+</head>
+<body ng-app="pg">
+
+	<!-- NAVIGATION -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="/">Home</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="graph1">Graph 1</a></li>
+            <li><a ui-sref="graph2">Graph 2</a></li>
+            <li><a ui-sref="graph3">Graph 3</a></li>
+            <li><a ui-sref="graph4">Graph 4</a></li>
+            <li><a ui-sref="graph5">Graph 5</a></li>
+            <li><a ui-sref="graph6">Graph 6</a></li>
+        </ul>
+        <div>
+            <h2 class="navbar-head" ui-sref="/">PAYMENT GATEWAYS</h2>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT -->
+        <div ui-view></div>
+
+    </div>
+	
+    <script type="text/javascript" src="packages/angular/angular.min.js"></script>
+    <script type="text/javascript" src="packages/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="packages/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="packages/angular-ui-router/release/angular-ui-router.min.js"></script> 
+    <script type="text/javascript" src="packages/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="packages/highcharts/modules/exporting.js"></script>
+    <script type="text/javascript" src="javascripts/app.js"></script>
+    <script type="text/javascript" src="javascripts/controllers.js"></script>
+
+</body>
+</html>
